@@ -37,5 +37,9 @@ pre: " <b> 1.5. </b> "
   - 01 Amazon CloudFront Distribution phân phối tài nguyên toàn cầu với Origin Access Control bảo mật, giảm độ trễ truy cập hơn 65%.
 
 ### Khó khăn và hướng giải quyết:
-- Khó khăn: Sau khi triển khai CloudFront Distribution với S3 Bucket, truy cập vào đường link CloudFront bị trả về mã lỗi 403 Forbidden AccessDenied.
-- Hướng giải quyết: Phân tích nguyên nhân do đã cấu hình Origin Access Control nhưng chưa cập nhật S3 Bucket Policy tương ứng để cấp quyền s3:GetObject cho CloudFront Service Principal với điều kiện ArnLike khớp với ARN của Distribution. Sau khi cập nhật lại chính sách Bucket Policy, lỗi 403 đã được xử lý thành công.
+- Khó khăn:
+  - Khi lần đầu khởi tạo Amazon CloudFront Distribution trên tài khoản AWS mới, yêu cầu khởi tạo bị hạn chế theo chính sách kiểm soát hạn mức mặc định và yêu cầu xác minh bảo mật của dịch vụ CloudFront, dẫn đến việc phân phối nội dung chưa thể kích hoạt ngay.
+  - Sau khi triển khai CloudFront Distribution với S3 Bucket, truy cập vào đường link CloudFront bị trả về mã lỗi 403 Forbidden AccessDenied.
+- Hướng giải quyết:
+  - Chủ động liên hệ và trao đổi chi tiết với đội ngũ **AWS Support**, giải trình rõ mục tiêu triển khai kiến trúc CDN thử nghiệm trong khuôn khổ chương trình thực tập **FCAJ**. Sau khi trao đổi và xác minh thông tin kiến trúc, phía AWS đã phê duyệt và mở quyền khởi tạo CloudFront Distribution thành công cho tài khoản.
+  - Phân tích nguyên nhân do đã cấu hình Origin Access Control nhưng chưa cập nhật S3 Bucket Policy tương ứng để cấp quyền s3:GetObject cho CloudFront Service Principal với điều kiện ArnLike khớp với ARN của Distribution. Sau khi cập nhật lại chính sách Bucket Policy, lỗi 403 đã được xử lý thành công.

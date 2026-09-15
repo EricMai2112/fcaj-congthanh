@@ -36,5 +36,9 @@ Internship orientation, AWS culture, and cloud account security foundation setup
   - Local development workstation fully provisioned with authenticated AWS CLI v2.
 
 ### Challenges Faced and Solutions:
-- Challenge: When configuring CloudWatch Billing Alarm, billing metrics were initially missing due to periodic billing metric aggregation delays.
-- Solution: Researched official AWS documentation, ensured Receive Billing Alerts was explicitly enabled under Root Billing Preferences, and simulated an SNS notification test to confirm alert delivery mechanisms.
+- Challenges Faced:
+  - During the registration of the personal AWS account, automated phone number verification and payment gateway validation encountered latency from the telecommunication provider, placing the account on a temporary verification hold and delaying immediate service access.
+  - When configuring CloudWatch Billing Alarm, billing metrics were initially missing due to periodic billing metric aggregation delays.
+- Solutions:
+  - Proactively submitted an inquiry and worked directly with **AWS Support**, exchanging required identity details and clarifying the academic nature of the **FCAJ** internship program. AWS Support manually reviewed and verified the account, expediting complete activation.
+  - Researched official AWS documentation, ensured Receive Billing Alerts was explicitly enabled under Root Billing Preferences, and simulated an SNS notification test to confirm alert delivery mechanisms.

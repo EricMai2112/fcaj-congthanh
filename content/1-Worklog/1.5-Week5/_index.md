@@ -37,5 +37,9 @@ Containerizing workloads with Docker and Amazon ECR, global content delivery via
   - 01 Hardened Amazon CloudFront Distribution featuring Origin Access Control protection, yielding over 65% latency reduction.
 
 ### Challenges Faced and Solutions:
-- Challenge: Following CloudFront Distribution deployment against the S3 origin, browsing to the CloudFront domain returned an HTTP 403 Forbidden AccessDenied error.
-- Solution: Discovered that although Origin Access Control had been assigned, the S3 Bucket Policy needed an explicit grant for s3:GetObject to the CloudFront Service Principal with an ArnLike condition matching the distribution ARN. Injected the generated policy into the S3 bucket configuration, resolving the 403 error.
+- Challenges Faced:
+  - When provisioning an Amazon CloudFront Distribution for the first time on the newly created AWS account, the deployment was restricted by default service quota policies and automated security verification checks, temporarily preventing distribution activation.
+  - Following CloudFront Distribution deployment against the S3 origin, browsing to the CloudFront domain returned an HTTP 403 Forbidden AccessDenied error.
+- Solutions:
+  - Proactively reached out to **AWS Support**, submitting an inquiry detailing the architecture and experimental CDN workloads intended for the **FCAJ** internship program. Following direct communication and validation, AWS Support verified the use case and enabled CloudFront Distribution provisioning on the account.
+  - Discovered that although Origin Access Control had been assigned, the S3 Bucket Policy needed an explicit grant for s3:GetObject to the CloudFront Service Principal with an ArnLike condition matching the distribution ARN. Injected the generated policy into the S3 bucket configuration, resolving the 403 error.

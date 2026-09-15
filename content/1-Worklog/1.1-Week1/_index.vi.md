@@ -36,5 +36,9 @@ pre: " <b> 1.1. </b> "
   - Môi trường máy tính cá nhân được cấu hình hoàn chỉnh với AWS CLI v2.
 
 ### Khó khăn và hướng giải quyết:
-- Khó khăn: Khi cấu hình Billing Alarm trên CloudWatch, số liệu chi phí ban đầu không hiển thị ngay do hệ thống tính toán hóa đơn cập nhật theo chu kỳ định kỳ.
-- Hướng giải quyết: Tra cứu tài liệu từ AWS Support, kích hoạt tùy chọn Receive Billing Alerts trong phần cài đặt Preferences của tài khoản Root, sau đó thực hiện kiểm tra luồng thông báo của SNS để bảo đảm email cảnh báo hoạt động chính xác.
+- Khó khăn:
+  - Khi đăng ký tài khoản AWS cá nhân mới, quá trình xác thực số điện thoại và thẻ thanh toán quốc tế gặp sự cố phản hồi từ cổng viễn thông, dẫn đến trạng thái tài khoản bị tạm giữ để xác minh bổ sung và chưa thể kích hoạt đầy đủ dịch vụ ngay.
+  - Khi cấu hình Billing Alarm trên CloudWatch, số liệu chi phí ban đầu không hiển thị ngay do hệ thống tính toán hóa đơn cập nhật theo chu kỳ định kỳ.
+- Hướng giải quyết:
+  - Chủ động liên hệ và mở case làm việc trực tiếp với đội ngũ **AWS Support**, trao đổi và cung cấp thông tin xác thực danh tính cá nhân phục vụ chương trình thực tập sinh **FCAJ**, qua đó được phía AWS hỗ trợ kiểm tra thủ công, phê duyệt nhanh chóng và kích hoạt hoàn tất tài khoản trong thời gian ngắn.
+  - Tra cứu tài liệu từ AWS Support, kích hoạt tùy chọn Receive Billing Alerts trong phần cài đặt Preferences của tài khoản Root, sau đó thực hiện kiểm tra luồng thông báo của SNS để bảo đảm email cảnh báo hoạt động chính xác.
