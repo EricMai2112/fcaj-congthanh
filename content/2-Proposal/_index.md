@@ -1,115 +1,174 @@
 ---
 title: "Proposal"
-date: 2024-01-01
+date: 2026-06-01
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-In this section, you need to summarize the contents of the workshop that you **plan** to conduct.
+# ChatPulse – Real-Time Messaging & Video Calling Platform on AWS Cloud
+### A Secure, AI-Augmented, and Automated CI/CD Real-Time Communication Solution on Amazon Web Services
 
-# IoT Weather Platform for Lab Research
-## A Unified AWS Serverless Solution for Real-Time Weather Monitoring
+---
 
 ### 1. Executive Summary
-The IoT Weather Platform is designed for the ITea Lab team in Ho Chi Minh City to enhance weather data collection and analysis. It supports up to 5 weather stations, with potential scalability to 10-15, utilizing Raspberry Pi edge devices with ESP32 sensors to transmit data via MQTT. The platform leverages AWS Serverless services to deliver real-time monitoring, predictive analytics, and cost efficiency, with access restricted to 5 lab members via Amazon Cognito.
 
-### 2. Problem Statement
-### What’s the Problem?
-Current weather stations require manual data collection, becoming unmanageable with multiple units. There is no centralized system for real-time data or analytics, and third-party platforms are costly and overly complex.
+**ChatPulse** is a comprehensive real-time communication web platform that enables users to effortlessly connect with friends, create group chats, send instant messages, make high-quality voice and video calls, leverage smart voice accessibility, and rely on multi-tier security ranging from JWT authentication and SHA-256 password hashing to AWS WAF edge protection.
 
-### The Solution
-The platform uses AWS IoT Core to ingest MQTT data, AWS Lambda and API Gateway for processing, Amazon S3 for storage (including a data lake), and AWS Glue Crawlers and ETL jobs to extract, transform, and load data from the S3 data lake to another S3 bucket for analysis. AWS Amplify with Next.js provides the web interface, and Amazon Cognito ensures secure access. Similar to Thingsboard and CoreIoT, users can register new devices and manage connections, though this platform operates on a smaller scale and is designed for private use. Key features include real-time dashboards, trend analysis, and low operational costs.
+The entire system is architected, deployed, and managed directly on **Amazon Web Services** cloud infrastructure in the Singapore Region ap-southeast-1, strictly complying with the design principles of the **AWS Well-Architected Framework**. The project applies an automated Continuous Integration and Continuous Deployment CI/CD pipeline ensuring fast, secure, and reliable system releases and updates.
 
-### Benefits and Return on Investment
-The solution establishes a foundational resource for lab members to develop a larger IoT platform, serving as a study resource, and provides a data foundation for AI enthusiasts for model training or analysis. It reduces manual reporting for each station via a centralized platform, simplifying management and maintenance, and improves data reliability. Monthly costs are $0.66 USD per the AWS Pricing Calculator, with a 12-month total of $7.92 USD. All IoT equipment costs are covered by the existing weather station setup, eliminating additional development expenses. The break-even period of 6-12 months is achieved through significant time savings from reduced manual work.
+- **🌐 Live Demo:** [https://ericmai.io.vn](https://ericmai.io.vn)
 
-### 3. Solution Architecture
-The platform employs a serverless AWS architecture to manage data from 5 Raspberry Pi-based stations, scalable to 15. Data is ingested via AWS IoT Core, stored in an S3 data lake, and processed by AWS Glue Crawlers and ETL jobs to transform and load it into another S3 bucket for analysis. Lambda and API Gateway handle additional processing, while Amplify with Next.js hosts the dashboard, secured by Cognito. The architecture is detailed below:
+---
 
-![IoT Weather Station Architecture](/images/2-Proposal/edge_architecture.jpeg)
+### 2. Project Objectives
 
-![IoT Weather Platform Architecture](/images/2-Proposal/platform_architecture.jpeg)
+The ChatPulse project is engineered to achieve the following core objectives:
 
-### AWS Services Used
-- **AWS IoT Core**: Ingests MQTT data from 5 stations, scalable to 15.
-- **AWS Lambda**: Processes data and triggers Glue jobs (two functions).
-- **Amazon API Gateway**: Facilitates web app communication.
-- **Amazon S3**: Stores raw data in a data lake and processed outputs (two buckets).
-- **AWS Glue**: Crawlers catalog data, and ETL jobs transform and load it.
-- **AWS Amplify**: Hosts the Next.js web interface.
-- **Amazon Cognito**: Secures access for lab users.
+1. **Build a Real-Time Communication Platform:** Provide an intuitive experience for connecting friends, managing group discussions, sending instant messages with low latency, and hosting smooth, high-definition voice and video calls directly in the web browser.
+2. **System Security & Data Integrity:** Implement multi-tier authentication and authorization via JWT, robust one-way SHA-256 password hashing, strict input validation against NoSQL Injection and XSS, end-to-end HTTPS and WSS encryption in transit, and AWS WAF edge firewall defense.
+3. **Integrate AI Capabilities & Intelligent Accessibility:** Utilize AI models for smart conversational assistance and incorporate Amazon Polly to synthesize text messages into natural speech for enhanced user convenience.
+4. **Deploy AWS Standard Cloud Infrastructure:** Design a multi-tier secured VPC architecture, optimize in-memory caching with Amazon ElastiCache Redis, enforce perimeter security via AWS WAF, and deliver content globally using Amazon CloudFront CDN.
+5. **Automate the Deployment Lifecycle:** Establish an automated CI/CD pipeline to package and deploy updates to AWS, ensuring fast release iterations without service downtime.
 
-### Component Design
-- **Edge Devices**: Raspberry Pi collects and filters sensor data, sending it to IoT Core.
-- **Data Ingestion**: AWS IoT Core receives MQTT messages from the edge devices.
-- **Data Storage**: Raw data is stored in an S3 data lake; processed data is stored in another S3 bucket.
-- **Data Processing**: AWS Glue Crawlers catalog the data, and ETL jobs transform it for analysis.
-- **Web Interface**: AWS Amplify hosts a Next.js app for real-time dashboards and analytics.
-- **User Management**: Amazon Cognito manages user access, allowing up to 5 active accounts.
+---
 
-### 4. Technical Implementation
-**Implementation Phases**
-This project has two parts—setting up weather edge stations and building the weather platform—each following 4 phases:
-- Build Theory and Draw Architecture: Research Raspberry Pi setup with ESP32 sensors and design the AWS serverless architecture (1 month pre-internship)
-- Calculate Price and Check Practicality: Use AWS Pricing Calculator to estimate costs and adjust if needed (Month 1).
-- Fix Architecture for Cost or Solution Fit: Tweak the design (e.g., optimize Lambda with Next.js) to stay cost-effective and usable (Month 2).
-- Develop, Test, and Deploy: Code the Raspberry Pi setup, AWS services with CDK/SDK, and Next.js app, then test and release to production (Months 2-3).
+### 3. Problem Statement & Value Proposition
 
-**Technical Requirements**
-- Weather Edge Station: Sensors (temperature, humidity, rainfall, wind speed), a microcontroller (ESP32), and a Raspberry Pi as the edge device. Raspberry Pi runs Raspbian, handles Docker for filtering, and sends 1 MB/day per station via MQTT over Wi-Fi.
-- Weather Platform: Practical knowledge of AWS Amplify (hosting Next.js), Lambda (minimal use due to Next.js), AWS Glue (ETL), S3 (two buckets), IoT Core (gateway and rules), and Cognito (5 users). Use AWS CDK/SDK to code interactions (e.g., IoT Core rules to S3). Next.js reduces Lambda workload for the fullstack web app.
+- **Problem:** Growing demand for online communication contrasts with many existing chat platforms that still store data without strict controls or rely on simplistic authentication, creating significant data exposure risks. Furthermore, conventional applications frequently face network congestion during peak traffic, manual release routines cause service interruptions, and audio accessibility solutions remain scarce.
+- **Solution:** ChatPulse delivers a modern communication solution backed by a robust multi-layer defense-in-depth architecture, including SHA-256 password hashing, strict JWT token validation, input sanitization with express-validator, and secure media access via S3 Pre-signed URLs. The platform leverages an Amazon ElastiCache Redis cluster for microsecond presence tracking and message routing, WebRTC SFU technology for smooth audio and video calling, Amazon Polly for intelligent voice synthesis, end-to-end HTTPS and WSS in-transit encryption, and perimeter protection via AWS WAF.
+- **Value & Benefits:** Offers users a secure, private, and seamless environment for social connection and teamwork, optimizes operational resource utilization and infrastructure costs, and ensures high availability, stability, and future scalability.
 
-### 5. Timeline & Milestones
-**Project Timeline**
-- Pre-Internship (Month 0): 1 month for planning and old station review.
-- Internship (Months 1-3): 3 months.
-    - Month 1: Study AWS and upgrade hardware.
-    - Month 2: Design and adjust architecture.
-    - Month 3: Implement, test, and launch.
-- Post-Launch: Up to 1 year for research.
+---
 
-### 6. Budget Estimation
-You can find the budget estimation on the [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01).  
-Or you can download the [Budget Estimation File](../attachments/budget_estimation.pdf).
+### 4. System Architecture & Tech Stack
 
-### Infrastructure Costs
-- AWS Services:
-    - AWS Lambda: $0.00/month (1,000 requests, 512 MB storage).
-    - S3 Standard: $0.15/month (6 GB, 2,100 requests, 1 GB scanned).
-    - Data Transfer: $0.02/month (1 GB inbound, 1 GB outbound).
-    - AWS Amplify: $0.35/month (256 MB, 500 ms requests).
-    - Amazon API Gateway: $0.01/month (2,000 requests).
-    - AWS Glue ETL Jobs: $0.02/month (2 DPUs).
-    - AWS Glue Crawlers: $0.07/month (1 crawler).
-    - MQTT (IoT Core): $0.08/month (5 devices, 45,000 messages).
+#### AWS Cloud Architecture Diagram
 
-Total: $0.7/month, $8.40/12 months
+The entire ChatPulse system architecture is designed and deployed on Amazon Web Services cloud infrastructure in the Singapore Region ap-southeast-1, strictly adhering to a secure multi-tier VPC model comprising a Public Subnet for application servers and a Private Subnet for internal data services.
 
-- Hardware: $265 one-time (Raspberry Pi 5 and sensors).
+<div style="text-align: center; margin: 24px 0;">
+  <img src="/images/2-Proposal/aws-architecture.jpg" alt="ChatPulse Platform Architecture on AWS Cloud" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+  <p style="font-size: 0.95rem; color: #64748b; margin-top: 10px; font-weight: 500; font-style: italic;">Figure 1: Comprehensive Infrastructure and Data Flow Architecture of ChatPulse on AWS Cloud in the Singapore Region ap-southeast-1</p>
+</div>
 
-### 7. Risk Assessment
-#### Risk Matrix
-- Network Outages: Medium impact, medium probability.
-- Sensor Failures: High impact, low probability.
-- Cost Overruns: Medium impact, low probability.
+#### Technology Stack Summary
 
-#### Mitigation Strategies
-- Network: Local storage on Raspberry Pi with Docker.
-- Sensors: Regular checks and spares.
-- Cost: AWS budget alerts and optimization.
+| Layer | Technologies / Services | Role & Engineering Purpose |
+| :--- | :--- | :--- |
+| **Frontend Client** | React 19, Vite, TypeScript | High-performance SPA with optimized tree-shaking and modern bundle size. |
+| | TailwindCSS v4, Radix UI | Sleek responsive styling, accessible UI components, and Dark/Light modes. |
+| | Zustand, TanStack Query v5 | Client-side state synchronization and asynchronous cache management. |
+| | Socket.io-client, LiveKit-client | Bidirectional WebSocket communication and WebRTC media streaming. |
+| **Backend API** | Node.js, Express, TypeScript | High-throughput RESTful endpoints and real-time event orchestration. |
+| | Socket.io Server, PM2 | Scalable concurrent socket connection management with process clustering. |
+| | LiveKit Server SDK | Room access token dispensation and media SFU routing. |
+| **Data Layer** | MongoDB Native Driver | Schema-flexible persistence for accounts, conversations, and chat history. |
+| | **Amazon ElastiCache Redis** | In-memory presence detection, rate limiting, and real-time session caching. |
+| **Security & Network**| **Amazon Route 53** | High-availability DNS routing for `ericmai.io.vn` and backend subdomains. |
+| | **AWS Certificate Manager** | Automated SSL/TLS certificates enforcing end-to-end HTTPS and WSS encryption. |
+| | **AWS WAF** | Web application firewall guarding against SQLi, XSS, and layer 7 DDoS. |
+| | **Amazon CloudFront** | Edge CDN distribution delivering static assets with minimal international latency. |
+| **Compute & Storage** | **Amazon EC2** | Dedicated application host running Node.js behind Nginx Reverse Proxy. |
+| | **Amazon S3** | Durable object storage for production frontend artifacts and attachments. |
+| **AI & Media Services**| **Amazon Polly** | Neural text-to-speech engine transforming text messages into lifelike voice. |
+| | **Amazon SES** | High-deliverability transactional email service for verification codes. |
+| | Gemini AI & Groq SDK | Real-time AI conversational assistance directly in chat threads. |
+| **DevOps & Telemetry**| **AWS CodePipeline & CodeBuild** | Fully automated serverless CI/CD pipeline triggered on code commit. |
+| | **Amazon CloudWatch** | Comprehensive metrics collection with automated alerts via CloudWatch Alarms. |
 
-#### Contingency Plans
-- Revert to manual methods if AWS fails.
-- Use CloudFormation for cost-related rollbacks.
+---
 
-### 8. Expected Outcomes
-#### Technical Improvements: 
-Real-time data and analytics replace manual processes.  
-Scalable to 10-15 stations.
-#### Long-term Value
-1-year data foundation for AI research.  
-Reusable for future projects.
+### 5. Technical Implementation
+
+#### Execution Phases:
+- **Research & Design:** Analyze requirements, architect AWS infrastructure according to the Well-Architected Framework, design database schema and API endpoints.
+- **Backend Development:** Build RESTful API and WebSocket services using Node.js and Express, integrate JWT authentication, connect MongoDB, setup ElastiCache Redis, and LiveKit WebRTC.
+- **Frontend Development:** Build Web UI with React 19 and Vite, design responsive interfaces with TailwindCSS, integrate AI conversational chatbot and Amazon Polly text-to-speech.
+- **Deployment & Testing:** Deploy onto AWS, configure AWS WAF edge firewall, establish automated CI/CD pipelines, and execute comprehensive end-to-end testing.
+
+#### Technical Requirements:
+- **Backend:** Node.js, Express, TypeScript, Socket.io, LiveKit Server SDK.
+- **Frontend:** React 19, Vite, TailwindCSS, Zustand, Socket.io-client.
+- **Database & Cache:** MongoDB, Amazon ElastiCache Redis.
+- **AWS Infrastructure:** VPC, EC2, S3, CloudFront, Route 53, CloudWatch, CodePipeline.
+- **Security:** AWS WAF, SSL/TLS, JWT, SHA-256 password hashing, S3 Pre-signed URL.
+
+---
+
+### 6. Implementation Roadmap
+
+- **Weeks 1–5: May 25 – Jun 26:** Master foundational AWS services including IAM, VPC, EC2, S3, RDS, DynamoDB, Serverless, Docker, CloudFront, and Route 53 via CloudJourney labs.
+- **Week 6: Jun 29 – Jul 03:** Launch ChatPulse project, analyze requirements, architect system following Well-Architected principles, provision dedicated VPC and S3 Media Bucket.
+- **Week 7: Jul 06 – Jul 10:** Initialize repository structure, develop Backend Auth with JWT, SHA-256 password hashing, Amazon SES email OTP integration, and deploy ElastiCache Redis.
+- **Week 8: Jul 13 – Jul 17:** Build real-time chat with Socket.io, integrate LiveKit WebRTC, upload media to S3 via Pre-signed URLs, configure Route 53 and ACM SSL certificates.
+- **Week 9: Jul 20 – Jul 24:** Enforce IAM Roles, configure AWS WAF firewall defense, setup CloudWatch Logs, and build automated CI/CD pipeline via CodePipeline.
+- **Week 10: Jul 27 – Jul 31:** Polish React 19 and Vite web interface, integrate AI assistant and Amazon Polly, conduct comprehensive system testing, and record demo video.
+- **Week 11: Aug 03 – Aug 07:** Optimize cloud expenses using S3 Lifecycle, measure system performance, and author 5 technical blog posts on AWS Study Group.
+- **Week 12: Aug 10 – Aug 14:** Finalize all features, optimize codebase, complete bilingual internship report, and conclude the project acceptance.
+
+---
+
+### 7. Cost Estimation & Optimization Analysis
+
+Monthly infrastructure costs are calculated using the official **[AWS Pricing Calculator](https://calculator.aws/)** for the Singapore Region ap-southeast-1, assuming continuous 730 hours/month operation:
+
+| AWS Service | Technical Configuration Specification | Monthly Cost (USD) | Cost Optimization Strategy |
+| :--- | :--- | :---: | :--- |
+| **Amazon EC2** | 1 instance t3.small, 2 vCPU, 2GB RAM, 30GB EBS gp3 | **$15.20** | Hosts Backend Node.js, Socket.IO, and Nginx. Savings Plans applicable for long-term runs. |
+| **Amazon ElastiCache** | 1 node cache.t3.micro Redis OSS Private Subnet | **$18.25** | High-performance in-memory presence detection and session caching. |
+| **AWS WAF** | 1 Web ACL, 3 Core Managed Rule Groups, 10M requests/month | **$6.50** | Edge perimeter defense mitigating application-layer DDoS and malicious scanners. |
+| **Amazon CloudFront** | Global edge distribution, approximately 50GB data transfer out | **$0.00** | Fully covered under AWS Free Tier with 1TB data transfer out per month. |
+| **Amazon S3** | S3 Standard, approximately 10GB web bundle assets and user media | **$0.25** | Automated S3 Lifecycle policies transition stale files to Glacier. |
+| **Amazon Route 53** | 1 Hosted Zone `ericmai.io.vn` and 1M DNS queries/month | **$0.90** | Baseline fixed fee for enterprise-grade authoritative DNS resolution. |
+| **Amazon SES** | Approximately 2,000 verification emails and notifications/month | **$0.00** | Covered under EC2 free allowance of 62,000 outgoing emails per month. |
+| **Amazon Polly** | Approximately 50,000 characters synthesized per month | **$0.00** | Covered under AWS Free Tier with 5M characters per month free. |
+| **AWS CodePipeline** | 1 active pipeline connected to GitHub source | **$0.00** | Covered under AWS Free Tier with 1 active pipeline free per month. |
+| **AWS CodeBuild** | Approximately 60 build minutes/month using general1.small | **$0.00** | Covered under AWS Free Tier with 100 build minutes free per month. |
+| **Amazon CloudWatch** | 5 Custom Metrics, 3 Alarms, 2GB log retention | **$2.10** | Retention period restricted to 14 days to prevent storage bloat. |
+| **ESTIMATED MONTHLY TOTAL** | *Full Production Environment* | **~$43.20 USD / month** | *~$518.40 USD / year* |
+
+> [!TIP]
+> **Budget Safeguards:**
+> 1. Multi-tier **AWS Budgets** configured with automated SNS email notifications at **$15**, **$30**, and **$40** spending thresholds.
+> 2. Daily tracking via **Amazon CloudWatch Billing Alarms** preventing unforeseen utilization spikes.
+> 3. Maximum utilization of the **AWS Free Tier** across S3, CloudFront, CodeBuild, and Amazon Polly.
+
+---
+
+### 8. Risk Assessment & Mitigation Strategies
+
+#### Risk Matrix:
+- **High WebSocket Concurrency Load:** High impact, medium probability during traffic spikes.
+- **Layer 7 DDoS or XSS Injections:** High impact, medium probability at application and edge tiers.
+- **JWT Token Leakage or Theft:** High impact, low probability if revocation mechanisms are missing.
+- **Unplanned AWS Budget Overrun:** Medium impact, low probability when idle resources are not pruned.
+- **Stale Browser Caching Post-Deploy:** Medium impact, high probability due to CDN edge cache retention.
+
+#### Mitigation Strategies:
+- **Connection and Streaming Optimization:** Offload user presence tracking to Amazon ElastiCache Redis, route audio and video media through a dedicated LiveKit SFU server, configure Nginx with keep-alive connections.
+- **Perimeter and Data Security:** Deploy AWS WAF to block malicious IPs, enforce Nginx rate limiting at 30 requests/second per IP, encrypt all transit data via HTTPS and WSS, secure media uploads using S3 Pre-signed URLs.
+- **Secure Session Management:** Configure short-lived 15-minute Access Tokens, manage Refresh Tokens strictly in the database with immediate revocation upon logout.
+- **Cost Controls:** Set up tiered AWS Budgets with SNS email notifications at $15, $30, and $40 spending levels, establish S3 Lifecycle rules transitioning older files to Glacier.
+
+#### Contingency Plan:
+- **Automated CDN Cache Invalidation:** Embed automatic CloudFront invalidation commands into the CodeBuild buildspec immediately after uploading static assets to S3.
+- **Rapid Version Rollback:** Leverage the automated CI/CD pipeline to rollback to the last stable deployment upon encountering critical runtime issues.
+- **Backup and Disaster Recovery:** Maintain automated database backups and version-controlled infrastructure configs to enable swift system restoration.
+
+---
+
+### 9. Expected Outcomes
+
+#### Technical Enhancements:
+- Deliver a production-grade communication platform hosted at [https://ericmai.io.vn](https://ericmai.io.vn) equipped with modern real-time communication capabilities:
+  - **Friend Connection & Social Interactions:** Fast user discovery, sending and receiving friend requests, contact list management, and real-time online or offline presence tracking.
+  - **Direct & Group Conversations:** Dynamic group chat creation, member permission controls, low-latency instant messaging, and secure file or photo sharing via Amazon S3.
+  - **Real-Time Media & AI Accessibility:** High-definition voice and video calls powered by WebRTC SFU, neural text-to-speech accessibility via Amazon Polly, and conversational AI assistance.
+- Architect a resilient multi-tier cloud infrastructure conforming to the 6 pillars of the AWS Well-Architected Framework, providing high availability, scalability, and minimal latency.
+- Automate the end-to-end release lifecycle using serverless CI/CD pipelines via AWS CodePipeline and AWS CodeBuild.
+
+#### Practical and Long-Term Value:
+- Provide users with a secure and private workspace backed by robust JWT authentication, SHA-256 password hashing, and AWS WAF perimeter defense.
+- Maintain cost-effective operations with an optimized cloud budget, maximizing AWS Free Tier benefits and creating an ideal foundation for future scaling.
+- Establish a reliable foundation for future integrations of intelligent AI services and multimedia communication features.

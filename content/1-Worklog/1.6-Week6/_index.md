@@ -17,23 +17,23 @@ Project kickoff for Chatpulse, technical requirements analysis, AWS Well-Archite
 
 ### Daily Worklog Details (29/06/2026 - 03/07/2026):
 
-| Date | Day | Tasks / Work Description | Hands-on Lab / Project Module | References |
-| :--- | :--- | :--- | :--- | :--- |
-| 29/06/2026 | Mon | - Alignment session with Mentor Nguyen Gia Hung finalizing project scope: Enterprise Internal Communication Platform Chatpulse.<br>- Outlined core user journeys: secure authentication, real-time WebSocket messaging, direct cloud document and image upload.<br>- Established an execution timeline and delivery milestones over the subsequent weeks. | Project Chatpulse: Scope definition and requirements specification | [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/) |
-| 30/06/2026 | Tue | - Drafted comprehensive architectural blueprints on Draw.io utilizing official AWS Architecture Icons.<br>- Mapped 3-tier data flows: Client to CloudFront, to ALB, to EC2 App Instances running Node.js and Socket.io, connecting to ElastiCache Redis, S3, and SES.<br>- Verified every connecting line to eliminate overlaps and ensure correct AWS service terminology. | Project Chatpulse: System architecture modeling with AWS Architecture Icons | [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/) |
-| 01/07/2026 | Wed | - Evaluated architectural choices against Well-Architected Pillars:<br>+ Security: Backend and database tiers isolated in Private Subnets; S3 interactions handled via Pre-signed URLs.<br>+ Reliability and Performance: Multi-AZ redundancy; Redis Pub/Sub cluster ensuring cross-node message distribution.<br>+ Cost Optimization: Maximizing resource efficiency with lean instance families and intelligent storage classes. | Project Chatpulse: Well-Architected Framework design verification | [Well-Architected Pillars](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) |
-| 02/07/2026 | Thu | - Provisioned the project dedicated VPC chatpulse-vpc with CIDR 10.10.0.0/16.<br>- Structured 3 isolated network tiers across 2 AZs: 2 Public Subnets for ALB and NAT Gateway, 2 Private App Subnets for EC2 instances, and 2 Private Data Subnets for ElastiCache Redis and Database.<br>- Attached Internet Gateway and updated routing tables. | Project Chatpulse: Multi-tier dedicated VPC infrastructure deployment | [VPC Subnet Sizing](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html) |
-| 03/07/2026 | Fri | - Created a dedicated media storage bucket named chatpulse-media-assets-prod.<br>- Configured complete Block Public Access settings and enabled SSE-S3 AES-256 server-side encryption.<br>- Implemented CORS policies permitting HTTP PUT and GET actions directly from client origins.<br>- Submitted architecture diagram to Mentor for review. | Project Chatpulse: S3 media bucket provisioning and security hardening | [S3 Security Best Practices](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html) |
+| Date | Day | Tasks / Work Description | Hands-on Lab / Project Module |
+| :--- | :--- | :--- | :--- |
+| 29/06/2026 | Mon | - Analyzed core workflows: registration, authenticated sign-in, real-time WebSocket chat, and direct cloud media uploads.<br>- Developed phased milestone delivery roadmaps for subsequent sprints. | [Final Project](https://github.com/EricMai2112/chat-pulse) |
+| 30/06/2026 | Tue | - Drafted system architecture in Draw.io using official AWS Architecture Icons.<br>- Designed 3-tier topology: Client to CloudFront, to ALB, to EC2 App instances running Node.js and Socket.io in Public Subnet, integrating with ElastiCache Redis in Private Subnet, S3, and SES.<br>- Refined architectural nuances ensuring valid service naming and decoupled data flows. | [Final Project](https://github.com/EricMai2112/chat-pulse) |
+| 01/07/2026 | Wed | - Conducted Well-Architected evaluation across all 5 pillars:<br>+ Security: EC2 backend deployed in Public Subnet, ElastiCache isolated in Private Subnet, and S3 Pre-signed URL uploads.<br>+ Reliability & Performance: Multi-AZ resilience with Redis Pub/Sub horizontal scale.<br>+ Cost Optimization: Right-sized instances and optimized storage policies. | [Final Project](https://github.com/EricMai2112/chat-pulse) |
+| 02/07/2026 | Thu | - Provisioned custom VPC for Chatpulse with CIDR 10.10.0.0/16.<br>- Implemented networking layout: 02 Public Subnets for ALB and EC2 Backend, 02 Private Data Subnets for ElastiCache Redis.<br>- Associated Internet Gateway and provisioned dedicated Route Tables. | [000003 - Multi-tier VPC Infrastructure Deployment](https://000003.awsstudygroup.com/) |
+| 03/07/2026 | Fri | - Provisioned dedicated media storage S3 Bucket named chatpulse-bucket.<br>- Enforced Block Public Access.<br>- Configured CORS policy allowing direct client HTTP PUT and GET requests.<br>- Compiled Week 6 deliverable package and reviewed blueprint with Mentor. | [000057 - Provisioning Secure S3 Media Storage Bucket](https://000057.awsstudygroup.com/) |
 
 ### Knowledge Acquired and Key Deliverables:
 - Knowledge Acquired:
   - Transforming business requirements into cloud architectural blueprints following AWS design standards.
-  - Practical realization of AWS Well-Architected principles: defense-in-depth, strict network segregation between Web, Application, and Data tiers.
+  - Practical realization of AWS Well-Architected principles: defense-in-depth, clear network segregation between public and private tiers.
   - Leveraging in-memory caching and Pub/Sub engines in Redis to maintain high throughput without database bottlenecks.
 - Key Deliverables:
   - Official AWS Architecture Diagram for Project Chatpulse ready for Proposal and Workshop chapters.
-  - Live chatpulse-vpc network spanning 6 isolated subnets across 2 Availability Zones.
-  - Hardened, encrypted S3 Bucket chatpulse-media-assets-prod ready for secure media ingestion.
+  - Live chatpulse-vpc network featuring Public Subnets for EC2 Backend and Private Subnets for ElastiCache Redis.
+  - S3 Bucket chatpulse-bucket ready for secure media ingestion.
 
 ### Challenges Faced and Solutions:
 - Challenge: The initial design routed media uploads through the EC2 backend server, which would cause severe network bandwidth bottlenecks when multiple concurrent users uploaded high-resolution media.
