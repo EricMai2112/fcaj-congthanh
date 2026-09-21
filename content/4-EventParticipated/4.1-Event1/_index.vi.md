@@ -1,125 +1,91 @@
 ---
 title: "Event 1"
-date: 2024-01-01
+date: 2026-05-30
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+# Bài thu hoạch 1
 
 ### Mục Đích Của Sự Kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+- Tiếp cận các phương pháp học tập và nâng cao kỹ năng AWS hiện đại thông qua các nền tảng thực hành tương tác.
+- Lắng nghe kinh nghiệm thực chiến từ các cuộc thi lập trình Hackathon, phương pháp làm việc nhóm và xây dựng sản phẩm mẫu hoàn chỉnh dưới áp lực thời gian.
+- Xây dựng sự tự tin trong giao tiếp chuyên môn, khả năng thuyết trình và bảo vệ giải pháp công nghệ trước hội đồng.
+- Tiếp cận các dự án ứng dụng Trí tuệ nhân tạo thực tế và khắc sâu tầm quan trọng của kỷ luật DevOps, giám sát hệ thống trong việc phòng ngừa sự cố phần mềm.
+
+---
 
 ### Danh Sách Diễn Giả
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+- **Anh Huỳnh Thái Linh**
+- **Anh Huỳnh An Khương, Anh Mai Quốc Anh, Anh Nguyễn Trần Minh Quân**
+- **Chị Nguyễn Thị Quỳnh Như**
+- **Anh Nghĩa Trần** – Agentic SA
+- **Anh Trần Minh Quân**
+
+---
 
 ### Nội Dung Nổi Bật
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### Nâng cao kỹ năng AWS với Cloud Quest và Floci
+- Phương pháp học tập và rèn luyện kỹ năng điện toán đám mây trực quan thông qua nền tảng nhập vai game hóa AWS Cloud Quest kết hợp cùng công cụ Floci.
+- Giúp người học nhanh chóng tiếp cận các dịch vụ cốt lõi của AWS, thực hành giải quyết bài toán hạ tầng theo kịch bản thực tế một cách trực quan và sinh động.
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+#### Chinh phục cuộc thi Hackathon: Từ ý tưởng đến sản phẩm mẫu
+- Những bài học thực chiến quý giá từ các cuộc thi Hackathon công nghệ.
+- Phân tích phương pháp tổ chức làm việc nhóm hiệu quả, kỹ thuật phân rã tính năng để hoàn thiện sản phẩm khả thi tối thiểu trong thời gian giới hạn, cũng như cách phối hợp nhịp nhàng giữa lập trình viên, thiết kế giao diện và quản trị dự án.
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+#### Tầm quan trọng của sự tự tin trong nghề nghiệp (Why we always need confidence)
+- Vai trò then chốt của sự tự tin trong môi trường công nghệ: tự tin giúp kỹ sư dám thử nghiệm giải pháp mới, vượt qua hội chứng kẻ giả mạo và trình bày mạch lạc ý tưởng trước tập thể.
+- Phương pháp rèn luyện kỹ năng giao tiếp chuyên môn, lắng nghe phản hồi tích cực và cách xây dựng phong thái tự tin trong các buổi báo cáo giải pháp.
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+#### Trình diễn giải pháp Trí tuệ nhân tạo: Dự án Tử Vi Đại Việt
+- Trình bày và minh họa thực tế dự án *Tử Vi Đại Việt*, giải pháp sáng tạo kết hợp giữa tri thức truyền thống và mô hình AI hiện đại chạy trên hạ tầng AWS.
+- Phân tích chi tiết quy trình xử lý dữ liệu thời gian thực, cơ chế tương tác mượt mà qua mã QR và kiến trúc tích hợp suy luận tự động của hệ thống.
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+#### Tảng băng chìm của dự án: Kỷ luật DevOps trước thềm sự cố (The hidden iceberg of a project: DevOps before disaster)
+- Phân tích "phần chìm của tảng băng" trong mọi hệ thống phần mềm: các rủi ro vận hành tiềm ẩn thường bị bỏ qua khi chỉ tập trung viết mã chức năng.
+- Tầm quan trọng then chốt của việc tự động hóa quy trình CI/CD, chuẩn hóa hạ tầng, thiết lập cơ chế giám sát và cảnh báo chủ động nhằm kịp thời ngăn chặn sự cố trước khi gây ảnh hưởng đến người dùng thực tế.
 
-#### Domain-Driven Design (DDD)
-
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
-
-#### Event-Driven Architecture
-
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
-
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+---
 
 ### Những Gì Học Được
 
-#### Tư Duy Thiết Kế
+#### Phương Pháp Rèn Luyện và Tinh Thần Đội Ngũ
+- Nắm bắt lộ trình học tập AWS hiệu quả qua các bài lab thực hành tương tác trực quan.
+- Học hỏi tư duy giải quyết vấn đề nhanh, kỹ năng phối hợp ăn ý và cách quản trị áp lực thời gian trong quá trình phát triển sản phẩm công nghệ.
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+#### Sự Tự Tin và Kỹ Năng Truyền Đạt
+- Hiểu rằng năng lực kỹ thuật phải song hành cùng khả năng diễn đạt; sự tự tin giúp việc bảo vệ giải pháp và tiếp nhận phản biện kỹ thuật đạt hiệu quả cao nhất.
 
-#### Kiến Trúc Kỹ Thuật
+#### Tư Duy Kiến Trúc AI và Kỷ Luật Vận Hành DevOps
+- Tiếp thu cách thức tích hợp các dịch vụ AI vào sản phẩm thực tế một cách an toàn và tối ưu.
+- Nhận thức sâu sắc rằng xây dựng hệ thống phần mềm luôn phải đi liền với quy trình tự động hóa kiểm thử, giám sát liên tục để đảm bảo tính sẵn sàng và độ tin cậy dài hạn.
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+---
 
-#### Chiến Lược Hiện Đại Hóa
+### Ứng Dụng Vào Công Việc Và Dự Án Chatpulse
 
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+- **Xây dựng quy trình tự động hóa CI/CD cho Chatpulse:** Áp dụng trực tiếp bài học từ phiên chia sẻ của anh Trần Minh Quân để thiết lập luồng phân phối tự động với **AWS CodePipeline** và **AWS CodeBuild**, đảm bảo mã nguồn luôn được kiểm thử và tự động xóa cache CDN khi phát hành bản mới.
+- **Tối ưu hóa kiến trúc thời gian thực:** Tiếp thu kinh nghiệm thiết kế hệ thống từ dự án của anh Nghĩa Trần để xây dựng kênh giao tiếp thời gian thực cho Chatpulse kết hợp **Amazon ElastiCache Redis**, đảm bảo độ trễ thấp và khả năng mở rộng ổn định.
+- **Rèn luyện phong thái báo cáo chuyên nghiệp:** Vận dụng bài học về sự tự tin để chủ động, tự tin trình bày tiến độ và phản biện kỹ thuật trong các buổi họp hàng tuần cùng Mentor Nguyễn Gia Hưng.
 
-### Ứng Dụng Vào Công Việc
+---
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+### Trải Nghiệm Trong Event
 
-### Trải nghiệm trong event
+Tham gia sự kiện tại tầng 26 tòa nhà Bitexco là một trải nghiệm khởi đầu vô cùng ý nghĩa:
+- **Tiếp thu góc nhìn đa chiều:** Từ phương pháp học tập, kỹ năng thi đấu Hackathon, sự tự tin trong nghề nghiệp đến các bài học kiến trúc AI và kỷ luật vận hành hệ thống.
+- **Lắng nghe chia sẻ tâm huyết từ các diễn giả:** Phần trình bày thực tế từ chị Huỳnh Thái Linh, các anh Khương, Anh, Quân, chị Quỳnh Như, anh Nghĩa Trần và anh Trần Minh Quân đã truyền cảm hứng mạnh mẽ cho chặng đường thực tập sắp tới.
+- **Định hình tư duy chuẩn mực:** Giúp tôi xác định rõ ràng rằng một sản phẩm tốt không chỉ chạy đúng chức năng mà phải có hạ tầng vững chắc, tự động hóa cao và vận hành an toàn.
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+---
 
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
+### Một Số Hình Ảnh Khi Tham Gia Sự Kiện
 
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
-
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
-
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+<div style="display: flex; gap: 16px; justify-content: center; align-items: center; flex-wrap: wrap; margin: 20px 0;">
+  <img src="/images/4-EventParticipated/event1-fcaj-kickoff-hall.jpg" alt="Toàn cảnh hội trường sự kiện tại văn phòng AWS Bitexco" style="width: 280px; height: 200px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); object-fit: cover;" />
+  <img src="/images/4-EventParticipated/event1-fcaj-kickoff-presentation.png" alt="Phiên thuyết trình demo dự án thực tế" style="width: 280px; height: 200px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); object-fit: cover;" />
+</div>

@@ -1,47 +1,52 @@
 ---
 title: "Sharing and Feedback"
-date: 2024-01-01
+date: 2026-08-15
 weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
-
-> Here, you can freely share your personal opinions about your experience participating in the First Cloud AI Journey program. This will help the FCAJ team improve any shortcomings based on the following aspects:
-
-### Overall Evaluation
-
-**1. Working Environment**  
-The working environment is very friendly and open. FCAJ members are always willing to help whenever I encounter difficulties, even outside working hours. The workspace is tidy and comfortable, helping me focus better. However, I think it would be nice to have more social gatherings or team bonding activities to strengthen relationships.
-
-**2. Support from Mentor / Team Admin**  
-The mentor provides very detailed guidance, explains clearly when I don’t understand, and always encourages me to ask questions. The admin team supports administrative tasks, provides necessary documents, and creates favorable conditions for me to work effectively. I especially appreciate that the mentor allows me to try and solve problems myself instead of just giving the answer.
-
-**3. Relevance of Work to Academic Major**  
-The tasks I was assigned align well with the knowledge I learned at university, while also introducing me to new areas I had never encountered before. This allowed me to both strengthen my foundational knowledge and gain practical skills.
-
-**4. Learning & Skill Development Opportunities**  
-During the internship, I learned many new skills such as using project management tools, teamwork skills, and professional communication in a corporate environment. The mentor also shared valuable real-world experiences that helped me better plan my career path.
-
-**5. Company Culture & Team Spirit**  
-The company culture is very positive: everyone respects each other, works seriously but still keeps things enjoyable. When there are urgent projects, everyone works together and supports one another regardless of their position. This made me feel like a real part of the team, even as an intern.
-
-**6. Internship Policies / Benefits**  
-The company provides an internship allowance and offers flexible working hours when needed. In addition, having the opportunity to join internal training sessions is a big plus.
+The internship of over 15 weeks in the First Cloud AI Journey (FCAJ 2026) program at **Amazon Web Services Viet Nam Company Limited** from May 25, 2026 to September 15, 2026 has been an immensely meaningful and memorable learning journey for me. Below are my sincere reflections, objective evaluations, and constructive feedback aimed at further enhancing the program for future generations of interns.
 
 ---
 
-### Additional Questions
-- What did you find **most satisfying** during your internship?  
-- What do you think the company **should improve** for future interns?  
-- If recommending to a friend, would you **suggest they intern here**? Why or why not?  
+### Program Experience Evaluation
+
+#### 1. Work Environment & Physical Facilities
+Regarding the work environment at the company, I believe there is no need to question its exceptional quality, as it truly inspired me immensely and provided a space where I could experience a professional, dynamic workplace with ample opportunities to learn and develop myself. Nevertheless, my greatest regret during my internship at the company was having relatively limited time at the office, which meant fewer opportunities to meet, connect, and interact directly with colleagues, mentors, and peers.
+
+#### 2. Mentorship & Support from the FCAJ Team
+I would like to extend my sincere gratitude to Mr. **Nguyen Gia Hung** for his detailed, easy-to-understand, and dedicated series of video tutorials, which guided me step-by-step from foundational concepts to standard solutions architecture thinking. Additionally, the enthusiastic and timely support from Mr. **Lu Hoan Thien** and other mentors was invaluable, as they were always willing to listen, resolve technical hurdles, and steer my direction throughout project implementation. The FCAJ program coordination team also provided close companionship, hands-on AWS Credits, and optimal conditions for me to achieve my goals.
+
+#### 3. Alignment with Academic Curriculum
+The internship content and practical project closely aligned with the academic major I was trained in at Industrial University of Ho Chi Minh City (IUH). The program enabled me to effectively apply foundational theoretical knowledge of computer networks, databases, and software architecture to practical implementation on cloud infrastructure. Directly designing and configuring services such as VPC, EC2, S3, RDS, ElastiCache Redis, and CloudWatch helped me deeply grasp the connection between academic theory and enterprise real-world challenges.
+
+#### 4. Holistic Learning & Professional Growth
+The internship offered a precious opportunity to acquire a vast amount of both theoretical and practical knowledge in cloud computing. Technologies and services that I had previously only heard of are now things whose operating mechanisms I clearly understand and can directly configure. I made tangible progress in reading and comprehending English academic documents and developed the habit of proactively creating AWS support cases when facing account quota limits. In particular, the weekly office events always kept me excited, offering great opportunities to learn from experienced speakers, gain ideas for my project, and synthesize knowledge through 5 technical blogs published on AWS Study Group.
+
+#### 5. Corporate Culture & Team Spirit
+The company work environment exhibited an open, professional, and highly respectful spirit. Although I mostly researched and deployed my project independently due to not being in the same batch as prior cohorts, I always felt the warmth, friendliness, and total absence of distance between full-time staff and interns. Each time I attended an event or visited the office, I received a warm welcome that fostered a strong sense of connection and positivity.
+
+#### 6. Intern Policies & Benefits
+The program provided interns with practical benefits and substantial support: provision of hands-on resources (AWS Credits) for experimenting and deploying real-world projects, access to rich and high-quality company academic documentation, free attendance at weekly in-depth workshops with leading experts, and dedicated guidance and mentorship over more than 15 weeks.
 
 ---
 
-### Suggestions & Expectations
-- Do you have any suggestions to improve the internship experience?  
-- Would you like to continue this program in the future?  
-- Any other comments (free sharing):
+### Reflections and Constructive Feedback
+
+#### What did you find most satisfying during your internship?
+What satisfied me most during my internship at the company was the abundant repository of learning resources prepared by the company. As I mentioned earlier, the company's academic materials were instrumental in helping me comprehend both the theoretical foundations of the services and their practical use cases. Furthermore, the detailed video tutorials from Mr. **Nguyen Gia Hung** and other mentors greatly helped me bridge the gap between theory and hands-on practice.
+
+#### What do you think the company should improve for future interns?
+I think what the company could improve for future intern cohorts is providing more opportunities for interns to work at the office. I personally really enjoyed going to the office, but there was a period with quite a large number of students; even though I registered for all available sessions opened by the company, for over a month I was not approved to visit the office.
+
+#### If recommending to friends, would you advise them to intern here? Why?
+If recommending to friends regarding an internship here, I would wholeheartedly advise them to apply, as this is a truly professional environment that stands at the forefront of cloud computing in my view. For anyone wishing to cultivate and deepen their knowledge of Cloud, this is undoubtedly one of the best places for them in Vietnam.
+
+---
+
+### Suggestions & Aspirations
+
+- Increase office working sessions: I hope the company and program coordinators will facilitate more opportunities for interns to work directly at the office, fostering stronger connections, networking, and direct learning of corporate culture.
+- Organize regular review sessions with Mentors: Periodic progress and technical review sessions with mentors should be arranged so that interns receive detailed feedback, resolve roadblocks promptly, and optimize their project architecture.
+- Provide more individual and team hands-on assignments: Design additional hands-on exercises for individuals and groups across each milestone to help interns firmly solidify foundational knowledge and master services before undertaking large-scale projects.

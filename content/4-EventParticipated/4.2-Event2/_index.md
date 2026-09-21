@@ -1,126 +1,90 @@
 ---
 title: "Event 2"
-date: 2024-01-01
-weight: 1
+date: 2026-06-27
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
-
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report 2
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- Update on groundbreaking advancements within the AWS cloud ecosystem: spanning AI Agents, Voice AI architectures, and DevOps autonomous cloud operations.
+- Gain real-world insights from leading industry practitioners and solutions architects regarding technology career roadmaps and proactive capability building in the AI era.
+- Explore enterprise-grade cloud security paradigms, focusing on private connectivity patterns for intelligent agents via the Model Context Protocol (MCP) on AWS.
+
+---
 
 ### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **Mr. Steve Tran** – Cloud Thinker
+- **Mr. Nghi Danh, Mr. Trung Vu, Mr. Kiet Tran** – Renova Cloud, AWS Study Builder
+- **Ms. Bao & Mr. Nguyen Nguyen** – Cloud Engineer, Cloud Kinetic
+- **Mr. Truong & Ms. Minh Anh** – Noventic
+- **Mr. Toan Nguyen & Mr. Nghi Danh** – Renova Cloud
+
+---
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### Navigating Career Trajectories in the Era of AI Agents
+- Analyzing the paradigm shift in cloud engineering: evolving from manual routine coding into orchestration architects guiding and governing autonomous AI Agents.
+- Guiding aspiring engineers on establishing robust foundational principles, viewing AI as an operational force multiplier rather than a replacement threat.
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+#### Breakthrough Voice AI Architectures on AWS
+- Introducing real-time interactive speech architectures powered by the advanced Amazon Nova Sonic foundation model and WebRTC streaming.
+- Examining techniques for fluid Vietnamese speech recognition, ultra-low latency response cycles, and intelligent fallback handovers to human agents for complex enterprise workflows.
 
-#### Transitioning to modern application architecture – Microservices
+#### Autonomous Cloud Operations with Deep Response Engine & AWS DevOps Agent
+- Transitioning operations from passive monitoring (alert-driven) to proactive automated remediation (action-driven).
+- Discovering how the AWS DevOps Agent harnesses Amazon Bedrock AgentCore to analyze diagnostic logs, map system topology, and autonomously execute runbooks, dramatically slashing MTTD and MTTR towards zero downtime.
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+#### Modernizing Enterprise Productivity with Amazon Q
+- Utilizing AI assistants to automate enterprise business workflows, such as resume parsing, candidate evaluation, and data-backed recruitment decisions.
+- Enforcing strict enterprise data boundaries and objective evaluation criteria.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+#### Enterprise Security Architecture for MCP Integrations via Private VPC
+- Addressing data security challenges when connecting AI Agents to third-party tools via the Model Context Protocol (MCP).
+- Demonstrating secure routing configurations utilizing Private Subnets and VPC Endpoints, eliminating exposure of sensitive company assets to the public Internet.
 
-#### Domain-Driven Design (DDD)
-
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
-
-#### Event-Driven Architecture
-
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
-
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+---
 
 ### Key Takeaways
 
-#### Design Mindset
+- **Proactive Engineering Mindset:** Embracing AI as a productivity amplifier while recognizing that ultimate accountability for system architecture, reliability, and correctness rests with the engineer.
+- **Low-Latency Streaming Techniques:** Understanding bidirectional streaming audio mechanics and tuning language models for localized conversational nuances.
+- **Autonomous Remediation (Self-Healing Systems):** Learning how to design self-healing cloud architectures by combining Amazon CloudWatch metrics with intelligent agents.
+- **Enterprise Network Isolation:** Mastering private network routing and data governance standards when integrating third-party agent protocols like MCP.
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+---
 
-#### Technical Architecture
+### Application to Work & Chatpulse Capstone Project
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+- **Architecting Multi-Tier VPC Security:** Adopted principles from the Private Security and VPC Connection session to secure the **Chatpulse** network. All backend servers, ElastiCache Redis clusters, and databases reside within Private Subnets, interacting safely through VPC Endpoints without public exposure.
+- **Implementing Automated Health Monitoring:** Applied concepts from the DevOps AI Agent to configure Amazon CloudWatch alarms that trigger automated recovery routines whenever abnormal connection surges or socket bottlenecks occur.
+- **Optimizing Low-Latency Streaming Data:** Incorporated insights on low-latency streaming and concurrency handling from the Voice Agents session to refine real-time chat throughput on Chatpulse.
 
-#### Modernization Strategy
-
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
-
-### Applying to Work
-
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+---
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+#### Career Adaptation Amid AI Disruption
+The session provided practical career guidance, inspiring me to identify key skills needed to build a durable engineering career in an evolving technological landscape.
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+#### Hands-On Exposure to Next-Gen AI Solutions
+Watching live demonstrations of autonomous log inspection, real-time speech interaction, and error mitigation broadened my perspective on the practical potential of cloud innovation.
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+#### Engaging Community Networking
+The event offered a warm and collaborative forum to converse with seasoned engineers from Renova Cloud, Cloud Kinetics, and Noventiq, gathering valuable real-world advice for my internship capstone.
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+#### Strengthening the "Security First" Mindset
+The deep dive into private MCP connectivity reinforced an indispensable truth: regardless of how advanced an AI capability appears, it must always be anchored upon an uncompromising, secure enterprise architecture.
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+---
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+### Event Photos
 
-#### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+<div style="display: flex; gap: 16px; justify-content: center; align-items: center; flex-wrap: wrap; margin: 20px 0;">
+  <img src="/images/4-EventParticipated/event3-aws-devops-agent.png" alt="AWS DevOps Agent presentation at FCAJ Community Day" style="width: 280px; height: 350px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); object-fit: cover;" />
+</div>

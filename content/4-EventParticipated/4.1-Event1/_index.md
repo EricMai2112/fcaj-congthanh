@@ -1,126 +1,91 @@
 ---
 title: "Event 1"
-date: 2024-01-01
+date: 2026-05-30
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
-
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report 1
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- Discover modern methodologies and interactive platforms to advance AWS cloud skills effectively.
+- Gain battle-tested lessons from technology Hackathons on team collaboration and rapid MVP engineering under strict deadlines.
+- Cultivate professional confidence in presenting, defending technical solutions, and overcoming imposter syndrome.
+- Explore real-world AI applications and reinforce the critical necessity of disciplined DevOps and proactive telemetry in averting production disasters.
+
+---
 
 ### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **Mr. Huynh Thai Linh**
+- **Mr. Huynh An Khuong, Mr. Mai Quoc Anh, Mr. Nguyen Tran Minh Quan**
+- **Ms. Nguyen Thi Quynh Nhu**
+- **Mr. Nghia Tran** – Agentic SA
+- **Mr. Tran Minh Quan**
+
+---
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### Level Up Your AWS Skills with Cloud Quest and Floci
+- Effective strategies for visual and experiential cloud computing education leveraging the gamified AWS Cloud Quest role-playing platform alongside Floci.
+- Helps learners rapidly master core AWS services and tackle architectural challenges through practical, interactive scenarios.
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+#### Mastering Hackathons: From Concept to Minimum Viable Product
+- Battle-tested insights and methodology derived from high-intensity technological Hackathons.
+- Detailed breakdown of agile team workflows, rapid feature decomposition to deliver robust MVPs within strict time limits, and effective cross-functional synchronization between engineers, designers, and project managers.
 
-#### Transitioning to modern application architecture – Microservices
+#### Why We Always Need Confidence
+- The foundational importance of self-confidence in engineering careers: enabling professionals to explore innovative solutions, overcome imposter syndrome, and articulate architectural ideas persuasively.
+- Actionable techniques for constructive technical discourse, active listening, and commanding presence during stakeholder presentations.
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+#### AI in Action: Tu Vi Dai Viet Showcase
+- Architectural walkthrough and live demonstration of *Tu Vi Dai Viet*, a creative solution bridging cultural heritage with modern AI models on AWS.
+- In-depth exploration of real-time data handling, streamlined user interaction via QR codes, and decoupled automated AI inference pipelines.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+#### The Hidden Iceberg of a Project: DevOps Before Disaster
+- Deep analysis of the "submerged iceberg" in every software system: underlying operational vulnerabilities and failure modes that remain unseen when focusing solely on functional code.
+- Highlights the paramount necessity of CI/CD pipeline automation, infrastructure standardization, and proactive telemetry to identify and mitigate anomalies before they impact production users.
 
-#### Domain-Driven Design (DDD)
-
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
-
-#### Event-Driven Architecture
-
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
-
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+---
 
 ### Key Takeaways
 
-#### Design Mindset
+#### Practical Skill Advancement & Team Tenacity
+- Mastered self-directed AWS learning avenues through gamified interactive labs.
+- Internalized agile problem-solving, team synergy, and resilience under aggressive delivery schedules.
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+#### Professional Confidence & Technical Articulation
+- Recognized that technical proficiency must be paired with clear, confident communication to defend architectural choices effectively.
 
-#### Technical Architecture
+#### Pragmatic AI Architecture & DevOps Discipline
+- Absorbed valuable patterns for integrating cloud-native AI services cleanly, securely, and scalably into production applications.
+- Cemented the understanding that sustainable systems depend fundamentally on automated delivery pipelines and proactive telemetry.
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+---
 
-#### Modernization Strategy
+### Application to Work & Chatpulse Capstone Project
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+- **Establishing Automated CI/CD for Chatpulse:** Directly applied insights from Mr. Tran Minh Quan's session to construct an automated deployment workflow using **AWS CodePipeline** and **AWS CodeBuild**, ensuring consistent builds and automated CDN invalidations upon every release.
+- **Architecting Resilient Real-Time Streaming:** Leveraged lessons from Mr. Nghia Tran's real-time architecture to optimize Chatpulse's bidirectional WebSocket messaging pipeline combined with **Amazon ElastiCache Redis**, achieving minimal latency and high reliability.
+- **Refining Milestone Presentation Demeanor:** Applied communication and confidence strategies to present weekly progress and articulate technical decisions assertively to Mentor Nguyen Gia Hung.
 
-### Applying to Work
+---
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+### Event Impressions
 
-### Event Experience
+Participating in the meetup at the Bitexco 26th floor was an exceptionally inspiring kickoff:
+- **Broad Multi-Disciplinary Perspectives:** Gained rich insights spanning gamified cloud learning, hackathon team execution, professional confidence, practical AI architectures, and operational DevOps rigor.
+- **Inspiring Speaker Dedication:** Sincere, practical knowledge shared by Ms. Huynh Thai Linh, Mr. Khuong, Mr. Anh, Mr. Quan, Ms. Quynh Nhu, Mr. Nghia Tran, and Mr. Tran Minh Quan fueled immense motivation for the 12-week internship ahead.
+- **Standardizing Engineering Mindset:** Solidified the principle that high-caliber engineering demands not just working code, but resilient infrastructure, rigorous automation, and operational safety.
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+---
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+### Event Photos
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
-
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
-
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
-
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
-
-#### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+<div style="display: flex; gap: 16px; justify-content: center; align-items: center; flex-wrap: wrap; margin: 20px 0;">
+  <img src="/images/4-EventParticipated/event1-fcaj-kickoff-hall.jpg" alt="Event hall panorama at AWS Bitexco office" style="width: 280px; height: 200px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); object-fit: cover;" />
+  <img src="/images/4-EventParticipated/event1-fcaj-kickoff-presentation.png" alt="Live project demonstration session" style="width: 280px; height: 200px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); object-fit: cover;" />
+</div>
