@@ -128,6 +128,27 @@ Monthly infrastructure costs are calculated using the official **[AWS Pricing Ca
 | **Amazon CloudWatch** | 5 Custom Metrics, 3 Alarms, 2GB log retention | **$2.10** | Retention period restricted to 14 days to prevent storage bloat. |
 | **ESTIMATED MONTHLY TOTAL** | *Full Production Environment* | **~$43.20 USD / month** | *~$518.40 USD / year* |
 
+#### Cost Optimization Strategies:
+
+1. **Leveraging AWS Free Tier Allocations:**
+   - Maximize Free Tier benefits during the first year for Amazon CloudFront with 1TB outbound data transfer monthly, Amazon S3 with 5GB Standard storage, AWS CodePipeline with 1 active pipeline, AWS CodeBuild with 100 build minutes monthly, and Amazon Polly with 5 million characters monthly.
+   - Benefit from Amazon SES zero-fee allowance of 62,000 outbound emails monthly when dispatched from applications running on Amazon EC2.
+
+2. **Instance Right-Sizing:**
+   - Deploy cost-efficient `t3.small` burstable compute instance matching application workloads and leveraging CPU credits without over-provisioning larger instances unnecessarily.
+   - Utilize lightweight `cache.t3.micro` Redis node for presence synchronization at minimum hourly expense.
+
+3. **Storage Lifecycle and Log Pruning:**
+   - Establish S3 Lifecycle Rules transitioning aged user uploads and media after 30 or 60 days to lower-cost storage tiers such as S3 Standard-IA or S3 Glacier Flexible Retrieval.
+   - Restrict CloudWatch Logs retention period to 7 to 14 days rather than perpetual storage, avoiding creeping log storage fees.
+
+4. **Proactive Budget Tracking and Early Alerting:**
+   - Configure multi-tier **AWS Budgets** alerts triggering SNS notifications to administrator emails at 50%, 80%, and 100% spending thresholds.
+   - Monitor daily spending patterns with **CloudWatch Billing Alarms** to detect unexpected spikes immediately.
+
+5. **Long-Term Savings with AWS Savings Plans:**
+   - Plan migration toward 1-year or 3-year Compute Savings Plans once workload demands stabilize, cutting EC2 compute costs by up to 66% compared to on-demand pricing.
+
 ---
 
 ### 8. Risk Assessment & Mitigation Strategies

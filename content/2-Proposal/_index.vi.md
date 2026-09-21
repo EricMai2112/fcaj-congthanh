@@ -128,6 +128,27 @@ Chi phí hạ tầng hàng tháng được tính toán chi tiết bằng công c
 | **Amazon CloudWatch** | 5 Custom Metrics, 3 Cảnh báo Alarms, 2GB Logs lưu trữ | **2.10 USD** | Tối ưu thời gian lưu log xuống 14 ngày để không phát sinh chi phí lưu trữ dư thừa. |
 | **TỔNG CỘNG HÀNG THÁNG** | *Duy trì toàn bộ hệ thống Production* | **~43.20 USD / tháng** | *~518.40 USD / năm* |
 
+#### Các chiến lược tối ưu chi phí:
+
+1. **Tận dụng tối đa chương trình AWS Free Tier:**
+   - Tận dụng gói định mức miễn phí trong năm đầu tiên cho các dịch vụ Amazon CloudFront với 1TB dung lượng truyền tải dữ liệu mỗi tháng, Amazon S3 với 5GB lưu trữ tiêu chuẩn, AWS CodePipeline với 1 pipeline đang hoạt động, AWS CodeBuild với 100 phút biên dịch mỗi tháng và Amazon Polly với 5 triệu ký tự văn bản mỗi tháng.
+   - Hưởng lợi từ chính sách miễn phí 62.000 email gửi đi mỗi tháng từ Amazon SES khi thực hiện gửi từ ứng dụng chạy trên máy chủ Amazon EC2.
+
+2. **Lựa chọn đúng kích thước tài nguyên:**
+   - Sử dụng dòng máy chủ `t3.small` với vi xử lý thế hệ mới tiết kiệm điện năng và hỗ trợ cơ chế Bursting Credits cho các tác vụ tải tăng đột biến ngắn hạn mà không cần nâng cấp lên các dòng instance lớn hơn gây lãng phí ngân sách.
+   - Sử dụng node Redis `cache.t3.micro` đáp ứng hoàn hảo nhu cầu lưu trữ bộ nhớ đệm trạng thái người dùng với chi phí tối thiểu.
+
+3. **Quản lý vòng đời dữ liệu và cắt giảm lưu trữ:**
+   - Áp dụng S3 Lifecycle Rules để tự động chuyển tiếp các tệp đính kèm và hình ảnh cũ sau 30 hoặc 60 ngày sang các tầng lưu trữ chi phí thấp hơn như S3 Standard-IA hoặc S3 Glacier Flexible Retrieval.
+   - Cấu hình thời gian lưu trữ CloudWatch Logs Log Retention xuống mức 7 đến 14 ngày thay vì để vô thời hạn, loại bỏ triệt để chi phí lưu trữ nhật ký hệ thống dư thừa.
+
+4. **Giám sát ngân sách và cảnh báo chi phí sớm:**
+   - Thiết lập công cụ **AWS Budgets** với các mốc cảnh báo chi phí định kỳ 50%, 80% và 100% dự toán qua Amazon SNS về email quản trị viên.
+   - Cấu hình **Amazon CloudWatch Billing Alarms** theo dõi biến động chi phí tức thời mỗi ngày để kịp thời phát hiện các tài nguyên phát sinh bất thường.
+
+5. **Kế hoạch tiết kiệm dài hạn với AWS Savings Plans:**
+   - Khi hệ thống bước vào giai đoạn vận hành chính thức ổn định dài hạn từ 1 đến 3 năm, có thể cam kết Compute Savings Plans để giảm tới 66% chi phí cho các máy chủ EC2 so với mức giá On-Demand thông thường.
+
 ---
 
 ### 8. Đánh Giá Rủi Ro & Phương Án Dự Phòng
