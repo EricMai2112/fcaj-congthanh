@@ -128,12 +128,6 @@ Chi phí hạ tầng hàng tháng được tính toán chi tiết bằng công c
 | **Amazon CloudWatch** | 5 Custom Metrics, 3 Cảnh báo Alarms, 2GB Logs lưu trữ | **2.10 USD** | Tối ưu thời gian lưu log xuống 14 ngày để không phát sinh chi phí lưu trữ dư thừa. |
 | **TỔNG CỘNG HÀNG THÁNG** | *Duy trì toàn bộ hệ thống Production* | **~43.20 USD / tháng** | *~518.40 USD / năm* |
 
-> [!TIP]
-> **Chiến lược kiểm soát và tối ưu ngân sách:**
-> 1. Thiết lập **AWS Budgets** với ngưỡng cảnh báo tự động gửi email qua SNS khi chi phí chạm mốc **15 USD**, **30 USD** và **40 USD**.
-> 2. Cấu hình **Amazon CloudWatch Billing Alarm** giám sát biến động chi phí tức thời theo ngày.
-> 3. Tận dụng tối đa tài nguyên trong chương trình **AWS Free Tier** cho S3, CloudFront, CodeBuild và Amazon Polly.
-
 ---
 
 ### 8. Đánh Giá Rủi Ro & Phương Án Dự Phòng

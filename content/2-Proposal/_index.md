@@ -128,12 +128,6 @@ Monthly infrastructure costs are calculated using the official **[AWS Pricing Ca
 | **Amazon CloudWatch** | 5 Custom Metrics, 3 Alarms, 2GB log retention | **$2.10** | Retention period restricted to 14 days to prevent storage bloat. |
 | **ESTIMATED MONTHLY TOTAL** | *Full Production Environment* | **~$43.20 USD / month** | *~$518.40 USD / year* |
 
-> [!TIP]
-> **Budget Safeguards:**
-> 1. Multi-tier **AWS Budgets** configured with automated SNS email notifications at **$15**, **$30**, and **$40** spending thresholds.
-> 2. Daily tracking via **Amazon CloudWatch Billing Alarms** preventing unforeseen utilization spikes.
-> 3. Maximum utilization of the **AWS Free Tier** across S3, CloudFront, CodeBuild, and Amazon Polly.
-
 ---
 
 ### 8. Risk Assessment & Mitigation Strategies
