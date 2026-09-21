@@ -1,12 +1,12 @@
 ---
 title: "Sharing and Feedback"
-date: 2026-08-15
+date: 2026-05-25
 weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
 
-The internship of over 15 weeks in the First Cloud AI Journey (FCAJ 2026) program at **Amazon Web Services Viet Nam Company Limited** from May 25, 2026 to September 15, 2026 has been an immensely meaningful and memorable learning journey for me. Below are my sincere reflections, objective evaluations, and constructive feedback aimed at further enhancing the program for future generations of interns.
+The internship of over 15 weeks in the First Cloud AI Journey (FCAJ 2026) program at **Amazon Web Services Viet Nam Company Limited** from May 25, 2026 to September 25, 2026 has been an immensely meaningful and memorable learning journey for me. Below are my sincere reflections, objective evaluations, and constructive feedback aimed at further enhancing the program for future generations of interns.
 
 ---
 

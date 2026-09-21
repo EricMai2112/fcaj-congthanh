@@ -1,12 +1,12 @@
 ---
 title: "Tự đánh giá"
-date: 2026-08-15
+date: 2026-05-25
 weight: 6
 chapter: false
 pre: " <b> 6. </b> "
 ---
 
-Trong hơn 15 tuần thực tập tại **Công ty TNHH Amazon Web Services Việt Nam** thuộc chương trình First Cloud AI Journey (FCAJ 2026) từ ngày 25/05/2026 đến ngày 15/09/2026, dưới sự hướng dẫn tận tình của anh **Nguyễn Gia Hưng**, anh **Lữ Hoàn Thiện** và các anh/chị mentor, em thực sự đã có cơ hội vận dụng các kiến thức lý thuyết mà em đã học được từ trường lớp vào môi trường doanh nghiệp chuẩn quốc tế. Nhờ các tài liệu học thuật từ phía công ty đã giúp cho em hoàn thành nghiên cứu và triển khai dự án thực tế. Ngoài ra, các buổi sự kiện mà công ty tổ chức hàng tuần thực sự rất có ý nghĩa đối với bản thân em bởi vì đó là cơ hội rất lớn để cho em tiếp thu và học hỏi từ những anh/chị speaker có kinh nghiệm, mỗi lần tới sự kiện thì em rất háo hức bởi vì đó là khi em có thể lấy ý tưởng và kiến thức để áp dụng vào dự án của mình. Em tham gia tổng cộng 17 buổi với 5 buổi event và 12 buổi tham gia văn phòng, đồng thời xuất bản 5 bài blog chuyên môn trên AWS Study Group. Trong suốt quá trình, em luôn tuân thủ nghiêm túc kỷ luật, chủ động học hỏi và tiếp thu ý kiến từ các anh/chị mentor để nâng cao hiệu quả công việc.
+Trong hơn 15 tuần thực tập tại **Công ty TNHH Amazon Web Services Việt Nam** thuộc chương trình First Cloud AI Journey (FCAJ 2026) từ ngày 25/05/2026 đến ngày 25/09/2026, dưới sự hướng dẫn tận tình của anh **Nguyễn Gia Hưng**, anh **Lữ Hoàn Thiện** và các anh/chị mentor, em thực sự đã có cơ hội vận dụng các kiến thức lý thuyết mà em đã học được từ trường lớp vào môi trường doanh nghiệp chuẩn quốc tế. Nhờ các tài liệu học thuật từ phía công ty đã giúp cho em hoàn thành nghiên cứu và triển khai dự án thực tế. Ngoài ra, các buổi sự kiện mà công ty tổ chức hàng tuần thực sự rất có ý nghĩa đối với bản thân em bởi vì đó là cơ hội rất lớn để cho em tiếp thu và học hỏi từ những anh/chị speaker có kinh nghiệm, mỗi lần tới sự kiện thì em rất háo hức bởi vì đó là khi em có thể lấy ý tưởng và kiến thức để áp dụng vào dự án của mình. Em tham gia tổng cộng 17 buổi với 5 buổi event và 12 buổi tham gia văn phòng, đồng thời xuất bản 5 bài blog chuyên môn trên AWS Study Group. Trong suốt quá trình, em luôn tuân thủ nghiêm túc kỷ luật, chủ động học hỏi và tiếp thu ý kiến từ các anh/chị mentor để nâng cao hiệu quả công việc.
 
 ---
 

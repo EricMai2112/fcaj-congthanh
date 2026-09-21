@@ -1,12 +1,12 @@
 ---
 title: "Chia sẻ, đóng góp ý kiến"
-date: 2026-08-15
+date: 2026-05-25
 weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
 
-Kỳ thực tập hơn 15 tuần trong chương trình First Cloud AI Journey (FCAJ 2026) tại **Công ty TNHH Amazon Web Services Việt Nam** từ ngày 25/05/2026 đến ngày 15/09/2026 là một hành trình học hỏi vô cùng ý nghĩa và đáng nhớ đối với em. Dưới đây là những cảm nhận chân thành, đánh giá khách quan và các ý kiến đóng góp mang tính xây dựng của em nhằm góp phần hoàn thiện hơn nữa chương trình cho các thế hệ thực tập sinh tiếp theo.
+Kỳ thực tập hơn 15 tuần trong chương trình First Cloud AI Journey (FCAJ 2026) tại **Công ty TNHH Amazon Web Services Việt Nam** từ ngày 25/05/2026 đến ngày 25/09/2026 là một hành trình học hỏi vô cùng ý nghĩa và đáng nhớ đối với em. Dưới đây là những cảm nhận chân thành, đánh giá khách quan và các ý kiến đóng góp mang tính xây dựng của em nhằm góp phần hoàn thiện hơn nữa chương trình cho các thế hệ thực tập sinh tiếp theo.
 
 ---
 

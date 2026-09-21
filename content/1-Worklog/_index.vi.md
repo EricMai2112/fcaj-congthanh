@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-Nhật ký công việc ghi lại toàn bộ tiến độ, nội dung công việc và hoạt động triển khai thực tế trong suốt hơn 12 tuần thực tập tại Công ty TNHH Amazon Web Services Việt Nam. Kế hoạch làm việc bắt đầu từ ngày 25/05/2026, được theo dõi và thực hiện đều đặn từ thứ 2 đến thứ 6 mỗi tuần.
+Nhật ký công việc ghi lại toàn bộ tiến độ, nội dung công việc và hoạt động triển khai thực tế trong suốt kỳ thực tập tại Công ty TNHH Amazon Web Services Việt Nam từ ngày 25/05/2026 đến ngày 25/09/2026. Kế hoạch làm việc được theo dõi và thực hiện đều đặn từ thứ 2 đến thứ 6 mỗi tuần.
 
 ### Lộ trình 12 tuần làm việc:
 

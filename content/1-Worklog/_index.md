@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-The Worklog records the entire progress, work contents, and practical implementation activities throughout more than 12 weeks of internship at Amazon Web Services Viet Nam Company Limited. The work plan commenced on May 25, 2026, and is monitored and executed regularly from Monday to Friday each week.
+The Worklog records the entire progress, work contents, and practical implementation activities throughout the internship at Amazon Web Services Viet Nam Company Limited from May 25, 2026 to September 25, 2026. The work plan is monitored and executed regularly from Monday to Friday each week.
 
 ### 12-Week Roadmap:
 

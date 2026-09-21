@@ -1,12 +1,12 @@
 ---
 title: "Self-Assessment"
-date: 2026-08-15
+date: 2026-05-25
 weight: 6
 chapter: false
 pre: " <b> 6. </b> "
 ---
 
-During my more than 15-week internship at **Amazon Web Services Viet Nam Company Limited** under the First Cloud AI Journey (FCAJ 2026) program from May 25, 2026 to September 15, 2026, under the dedicated mentorship of Mr. **Nguyen Gia Hung**, Mr. **Lu Hoan Thien**, and the program mentors, I truly had the opportunity to apply the theoretical knowledge acquired from university into an international-standard enterprise environment. The academic and technical resources provided by the company helped me accomplish the research and deployment of a real-world project. In addition, the weekly events organized by the company were deeply meaningful to me, offering invaluable opportunities to absorb insights and learn from experienced guest speakers; every time I attended an event, I was genuinely thrilled because it was a chance to draw inspiration and knowledge to apply directly to my project. I participated in a total of 17 sessions comprising 5 event sessions and 12 office sessions, and published 5 in-depth technical blogs on AWS Study Group. Throughout this tenure, I consistently upheld professional discipline, actively pursued learning, and integrated mentor feedback to drive excellence.
+During my more than 15-week internship at **Amazon Web Services Viet Nam Company Limited** under the First Cloud AI Journey (FCAJ 2026) program from May 25, 2026 to September 25, 2026, under the dedicated mentorship of Mr. **Nguyen Gia Hung**, Mr. **Lu Hoan Thien**, and the program mentors, I truly had the opportunity to apply the theoretical knowledge acquired from university into an international-standard enterprise environment. The academic and technical resources provided by the company helped me accomplish the research and deployment of a real-world project. In addition, the weekly events organized by the company were deeply meaningful to me, offering invaluable opportunities to absorb insights and learn from experienced guest speakers; every time I attended an event, I was genuinely thrilled because it was a chance to draw inspiration and knowledge to apply directly to my project. I participated in a total of 17 sessions comprising 5 event sessions and 12 office sessions, and published 5 in-depth technical blogs on AWS Study Group. Throughout this tenure, I consistently upheld professional discipline, actively pursued learning, and integrated mentor feedback to drive excellence.
 
 ---
 
